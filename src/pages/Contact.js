@@ -2,27 +2,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 function Contact() {
-  const [status, setStatus] = useState('Send Message!');
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus('Sending...');
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch('http://localhost:5000/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus('Submit');
-    let result = await response.json();
-    alert(result.status);
-  };
   return (
     <StyledContact>
       <div className='ContactForm-Container'>
@@ -35,13 +14,22 @@ function Contact() {
             </h2>
           </div>
           <div>
-            <form className='form' onSubmit={handleSubmit}>
+            <form
+              method='POST'
+              name='contact'
+              netlify-honeypot='bot-field'
+              data-netlify='true'
+              className='form'
+              action='/pages/contact'
+            >
+              <input type='hidden' name='form-name' value='contact' />
               <div className='form-container'>
                 <div className='form-field'>
                   <input
                     className='form-input'
                     type='text'
                     id='name'
+                    name='name'
                     placeholder='Name'
                     required
                   />
@@ -51,6 +39,7 @@ function Contact() {
                     className='form-input'
                     type='email'
                     id='email'
+                    name='email'
                     placeholder='Email'
                     required
                   />
@@ -58,7 +47,7 @@ function Contact() {
               </div>
               <div className='form-textarea'>
                 <textarea
-                  name='textarea'
+                  name='message'
                   id='message'
                   cols='30'
                   rows='10'
@@ -67,7 +56,9 @@ function Contact() {
                 ></textarea>
               </div>
               <div className='form-button'>
-                <button className='button-contact'>{status}</button>
+                <button className='button-contact' type='submit' value='Send'>
+                  Send Message!
+                </button>
               </div>
             </form>
           </div>
@@ -80,11 +71,11 @@ function Contact() {
 export default Contact;
 
 const StyledContact = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
 
   .ContactForm-Container {
     display: flex;
@@ -131,23 +122,33 @@ const StyledContact = styled.div`
     font-weight: 700;
     margin-bottom: 20px;
     color: var(--primary-color-light);
+    @media (max-width: 480px) {
+      font-size: 2rem;
+    }
   }
 
   .paragraph-text {
     font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: 20px;
+    @media (max-width: 480px) {
+      font-size: 1rem;
+    }
   }
 
   .form-container {
     display: flex;
+    width: 100%;
+    padding: 20px 0;
     gap: 50px;
-    margin-bottom: 30px;
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
   }
 
   .form-field {
     width: 100%;
-    height: 40px;
+    height: auto;
     border-bottom: 1px solid var(--border-color);
     color: var(--font-light-color-2);
     transition: all 0.5s ease-in-out;

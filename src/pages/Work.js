@@ -39,14 +39,16 @@ export default Work;
 
 const StyledWork = styled.div`
   width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
 
   .MainContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     padding: 50px 0;
     justify-content: center;
     transition: all 0.5s ease-in-out;
@@ -70,6 +72,9 @@ const StyledWork = styled.div`
     text-align: center;
     margin-bottom: 20px;
     color: var(--primary-color-light);
+    @media (max-width: 480px) {
+      font-size: 2rem;
+    }
   }
 
   .ProjectsContainer {

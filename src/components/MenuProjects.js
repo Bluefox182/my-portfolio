@@ -49,11 +49,12 @@ const StyledMenu = styled.div`
   .grid-item {
     display: flex;
     flex-wrap: wrap;
+    width: 400px;
   }
 
   .portfolio-image {
     position: relative;
-    width: 400px;
+    width: 100%;
   }
 
   .portfolio-image img {
@@ -100,7 +101,6 @@ const StyledMenu = styled.div`
     font-size: 20px;
     position: absolute;
     display: flex;
-    padding: 10px;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);

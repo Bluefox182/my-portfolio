@@ -69,7 +69,7 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     text-decoration: none;
     font-size: 1rem;
-    overflow: hidden;
+    overflow-x: hidden;
     
 }
 

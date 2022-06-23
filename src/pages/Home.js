@@ -25,11 +25,10 @@ export default Home;
 const HomeStyled = styled.div`
   width: 100%;
   height: 100vh;
-  display: flex;
   position: relative;
-  justify-content: center;
-  flex-direction: column;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+
   @media (max-width: 768px) {
     margin: 0 20px;
     box-sizing: border-box;
@@ -37,15 +36,15 @@ const HomeStyled = styled.div`
 
   .typography {
     position: absolute;
-    display: flex;
-    flex-direction: column;
     text-align: left;
     width: 80%;
+
     h1,
     span {
       font-size: 5.5rem;
       font-weight: 500;
       line-height: 1;
+      padding: 20px 0;
     }
     span {
       color: var(--primary-color-light);
@@ -55,7 +54,7 @@ const HomeStyled = styled.div`
       font-weight: 300;
       line-height: 1;
       color: var(--font-light-color-2);
-      margin-top: 2rem;
+      padding: 20px 0;
     }
 
     .icons {
@@ -94,10 +93,10 @@ const HomeStyled = styled.div`
       width: 100%;
       h1,
       span {
-        font-size: 4rem;
+        font-size: 3.5rem;
       }
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
     }
   }

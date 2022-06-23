@@ -32,6 +32,9 @@ const ButtonStyled = styled.button`
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   margin-bottom: 0.6rem;
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 
   &:active,
   &:focus {

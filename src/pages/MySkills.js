@@ -55,18 +55,20 @@ function MySkills() {
 
 export default MySkills;
 const StyledSkills = styled.div`
-  margin: 0 auto;
   width: 100%;
-  height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
+  align-content: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+
   .MainContainer {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     width: 95%;
     height: 80%;
-    padding: 20px;
+    padding: 15px;
     box-sizing: border-box;
     align-items: center;
     justify-content: space-between;
@@ -94,7 +96,11 @@ const StyledSkills = styled.div`
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 20px;
+    padding: 20px 0;
     color: var(--primary-color-light);
+    @media (max-width: 480px) {
+      font-size: 2rem;
+    }
   }
 
   .Icons-Container {
@@ -102,28 +108,29 @@ const StyledSkills = styled.div`
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
+    padding: 20px 0;
     justify-content: center;
 
     img {
-      max-width: 150px;
+      max-width: 140px;
       /* border: 2px solid var(--border-color); */
       @media (max-width: 479px) {
-        width: 60px;
+        width: 50px;
       }
       @media (min-width: 480px) and (max-width: 540px) {
-        width: 80px;
+        width: 70px;
       }
       @media (min-width: 541px) and (max-width: 768px) {
-        width: 100px;
+        width: 90px;
       }
       @media (min-width: 769px) and (max-width: 875px) {
-        width: 120px;
+        width: 110px;
       }
       @media (min-width: 876px) and (max-width: 1200px) {
-        width: 130px;
+        width: 120px;
       }
       @media (min-width: 1201px) and (max-width: 1450px) {
-        width: 140px;
+        width: 130px;
       }
     }
   }

@@ -39,17 +39,18 @@ function About() {
 export default About;
 
 const StyledAbout = styled.div`
-  margin: 0 auto;
   width: 100%;
-  height: 100vh;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+
   .MainContainer {
     display: flex;
+
     flex-direction: column;
-    margin: 0 auto;
     width: 95%;
-    height: 80%;
+    height: 100%;
     padding: 20px;
     box-sizing: border-box;
     align-items: center;
@@ -91,14 +92,20 @@ const StyledAbout = styled.div`
   .title {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    padding: 20px;
     color: var(--primary-color-light);
+    @media (max-width: 480px) {
+      font-size: 2rem;
+    }
   }
 
   .sub-title {
     font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: 20px;
+    @media (max-width: 480px) {
+      font-size: 1.4rem;
+    }
   }
 
   .LeftContainer {
@@ -108,12 +115,15 @@ const StyledAbout = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+    p {
+      padding: 10px 0;
+    }
     @media (max-width: 1024px) {
       width: 100%;
     }
     @media (max-width: 480px) {
       p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
       }
     }
   }
