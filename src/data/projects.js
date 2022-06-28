@@ -3,7 +3,7 @@ import JS01 from '../assets/img/ImgProjects/project03.png';
 import JS02 from '../assets/img/ImgProjects/project04.png';
 import React02 from '../assets/img/ImgProjects/project06.png';
 import React03 from '../assets/img/ImgProjects/project07.png';
-import React04 from '../assets/img/ImgProjects/project08.png';
+import React04 from '../assets/img/ImgProjects/rickandmorty.png';
 
 const projects = [
   {
@@ -57,9 +57,9 @@ const projects = [
     id: 6,
     category: 'ReactJS',
     image: React04,
-    link1: 'https://github.com/Bluefox182/Shopping-Cart-React',
-    link2: 'https://bluefox182.github.io/Shopping-Cart-React/',
-    title: 'Shopping Cart',
+    link1: 'https://github.com/Bluefox182/ultimate-rick-and-morty',
+    link2: 'https://ultimate-rick-and-morty.netlify.app/',
+    title: 'Rick and Morty API',
     text: 'Built with ReactJS ',
   },
 ];
