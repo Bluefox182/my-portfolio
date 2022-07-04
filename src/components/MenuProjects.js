@@ -41,7 +41,7 @@ export default MenuProjects;
 const StyledMenu = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   gap: 10px;
   padding: 15px;
@@ -49,6 +49,7 @@ const StyledMenu = styled.div`
   .grid-item {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 300px;
     height: 200px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

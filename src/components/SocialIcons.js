@@ -31,16 +31,21 @@ export default SocialIcons;
 const StyledSocialIcons = styled.div`
   display: flex;
   align-items: space-between;
-  justify-content: center;
+  justify-content: flex-end;
   position: fixed;
+  padding-right: 20px;
   right: 0;
   bottom: 50px;
   width: 100px;
   z-index: 15;
+  @media (max-width: 479px) {
+    padding-right: 5px;
+  }
+
   .icons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     .icon {
       padding: 1rem 0;
       display: flex;
