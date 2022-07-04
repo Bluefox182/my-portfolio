@@ -55,7 +55,7 @@ const ButtonsStyled = styled.div`
   flex-wrap: wrap;
   gap: 20px;
   width: 70%;
-  margin: 2.4rem auto;
+  padding: 35px 0;
   @media screen and (max-width: 599px) {
     gap: 10px;
   }

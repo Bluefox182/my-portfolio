@@ -9,27 +9,25 @@ function MenuProjects({ menuItem }) {
       {menuItem.map((item) => {
         return (
           <div className='grid-item' key={item.id}>
-            <div className='portfolio-content'>
-              <div className='portfolio-image'>
-                <img src={item.image} alt='' />
+            <div className='portfolio-image'>
+              <img src={item.image} alt='' />
 
-                <ul className='overlay'>
-                  <h6>{item.title}</h6>
-                  <p>{item.text}</p>
-                  <div className='overlay-text'>
-                    <li>
-                      <a href={item.link1}>
-                        <GitHubIcon sx={{ fontSize: 40 }} />
-                      </a>
-                    </li>
-                    <li>
-                      <a href={item.link2}>
-                        <PreviewIcon sx={{ fontSize: 40 }} />
-                      </a>
-                    </li>
-                  </div>
-                </ul>
-              </div>
+              <ul className='overlay'>
+                <h6>{item.title}</h6>
+                <p>{item.text}</p>
+                <div className='overlay-text'>
+                  <li>
+                    <a href={item.link1}>
+                      <GitHubIcon sx={{ fontSize: 40 }} />
+                    </a>
+                  </li>
+                  <li>
+                    <a href={item.link2}>
+                      <PreviewIcon sx={{ fontSize: 40 }} />
+                    </a>
+                  </li>
+                </div>
+              </ul>
             </div>
           </div>
         );
@@ -45,21 +43,31 @@ const StyledMenu = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  padding: 15px;
 
   .grid-item {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
+    width: 300px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    @media (min-width: 768px) and (max-width: 1023px) {
+      /* width: 200px; */
+    }
   }
 
   .portfolio-image {
     position: relative;
     width: 100%;
+    height: 200px;
+    object-position: 0 10%;
+    overflow: hidden;
   }
 
   .portfolio-image img {
     width: 100%;
-    height: 30vh;
+    height: 100%;
     object-fit: cover;
   }
   .portfolio-image {
@@ -131,13 +139,14 @@ const StyledMenu = styled.div`
   }
 
   h6 {
-    font-size: 30px;
+    font-size: 1.2rem;
     color: var(--white-color-2);
     text-align: center;
     padding: 20px 0;
-    /* overflow: hidden; */
+    overflow: hidden;
   }
   p {
+    font-size: 0.8rem;
     color: var(--white-color-2);
   }
 `;

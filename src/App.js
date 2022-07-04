@@ -79,10 +79,9 @@ function App() {
 
 const MainContentStyled = styled.main`
   position: relative;
-  margin-left: 200px;
   min-height: 100vh;
-  @media screen and (max-width: 1200px) {
-    margin-left: 0;
+  @media screen and (min-width: 768px) {
+    margin-left: 200px;
   }
 `;
 

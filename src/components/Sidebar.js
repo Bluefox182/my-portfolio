@@ -78,6 +78,7 @@ const SidebarContainer = styled.div`
     height: 100%;
     width: 100%;
     border-right: 1px solid var(--border-color);
+    
   }
 
 
@@ -86,6 +87,7 @@ const SidebarContainer = styled.div`
     border-bottom: 1px solid var(--border-color);
     text-align: center;
     padding: 1rem 0;
+    overflow: hidden;
     img {
       width: 100%;
       border-radius: 50%;
@@ -98,6 +100,7 @@ const SidebarContainer = styled.div`
   .nav-items {
     width: 100%;
     text-align: center;
+    overflow: hidden;
     li {
       display: block;
       a {
@@ -137,6 +140,7 @@ const SidebarContainer = styled.div`
   footer {
     border-top: 1px solid var(--border-color);
     width: 80%;
+    overflow: hidden;
     p {
       padding: 1.5rem 0;
       font-size: 0.8rem;

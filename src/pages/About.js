@@ -39,11 +39,16 @@ function About() {
 export default About;
 
 const StyledAbout = styled.div`
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 60px;
   padding-bottom: 30px;
+
+  @media screen and (min-width: 800px) and (max-width: 1024px) {
+    /* padding-top: 100px; */
+  }
 
   .MainContainer {
     display: flex;
@@ -68,11 +73,11 @@ const StyledAbout = styled.div`
       width: 75%;
     }
     @media (min-width: 768px) and (max-width: 1200px) {
-      margin-right: 70px;
-      margin-left: 200px;
+      width: 90%;
+      padding: 0 100px;
     }
     @media (min-width: 1201px) {
-      width: 80%;
+      width: 90%;
     }
   }
 

@@ -38,19 +38,13 @@ function Work() {
 export default Work;
 
 const StyledWork = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 30px;
-
   .MainContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    /* overflow-y: auto; */
-    padding: 50px 0;
+    align-items: center;
     justify-content: center;
+    padding: 15px 0;
     transition: all 0.5s ease-in-out;
 
     @media (max-width: 479px) {
@@ -59,26 +53,39 @@ const StyledWork = styled.div`
     @media (min-width: 480px) and (max-width: 768px) {
       /* width: 75%; */
     }
-    @media (min-width: 769px) and (max-width: 1200px) {
-      margin-right: 70px;
-      margin-left: 100px;
+    @media (min-width: 768px) and (max-width: 1023px) {
+      /* margin-right: 70px; */
+      /* margin-left: 150px; */
+      /* padding-left: 140px; */
+      /* width: 80%; */
     }
   }
   .TopContainer {
-  }
-  .title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 20px;
-    color: var(--primary-color-light);
-    @media (max-width: 480px) {
-      font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--primary-color-light);
+      @media (max-width: 480px) {
+        font-size: 2rem;
+      }
     }
   }
 
   .ProjectsContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    align-items: center;
   }
 `;

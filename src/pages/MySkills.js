@@ -84,10 +84,6 @@ const StyledSkills = styled.div`
     @media (min-width: 480px) and (max-width: 768px) {
       width: 75%;
     }
-    @media (min-width: 768px) and (max-width: 1200px) {
-      margin-right: 70px;
-      margin-left: 200px;
-    }
     @media (min-width: 1201px) {
       width: 80%;
     }
