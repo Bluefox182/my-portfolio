@@ -1,6 +1,6 @@
 import CSS01 from '../assets/img/ImgProjects/project01.png';
 import JS01 from '../assets/img/ImgProjects/project03.png';
-import JS02 from '../assets/img/ImgProjects/project04.png';
+import React01 from '../assets/img/ImgProjects/cupcakelanding.png';
 import React02 from '../assets/img/ImgProjects/project06.png';
 import React03 from '../assets/img/ImgProjects/project07.png';
 import React04 from '../assets/img/ImgProjects/rickandmorty.png';
@@ -28,11 +28,11 @@ const projects = [
   {
     id: 3,
     category: 'JavaScript',
-    image: JS02,
-    link1: 'https://github.com/Bluefox182/JavaScript-Clock',
-    link2: 'https://bluefox182.github.io/JavaScript-Clock/',
-    title: 'Clock',
-    text: 'Built with JavaScript',
+    image: React01,
+    link1: 'https://github.com/Bluefox182/cupcake-landing-page',
+    link2: 'https://cupcake-landing-page.netlify.app/',
+    title: 'Cupcake Landing Page',
+    text: 'Built with ReactJs',
   },
 
   {
