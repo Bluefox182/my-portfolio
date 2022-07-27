@@ -1,28 +1,28 @@
-import React from 'react';
-import styled from 'styled-components';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import PreviewIcon from '@mui/icons-material/Preview';
+import React from "react";
+import styled from "styled-components";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import PreviewIcon from "@mui/icons-material/Preview";
 
 function MenuProjects({ menuItem }) {
   return (
     <StyledMenu>
       {menuItem.map((item) => {
         return (
-          <div className='grid-item' key={item.id}>
-            <div className='portfolio-image'>
-              <img src={item.image} alt='' />
+          <div className="grid-item" key={item.id}>
+            <div className="portfolio-image">
+              <img src={item.image} alt={item.title} />
 
-              <ul className='overlay'>
+              <ul className="overlay">
                 <h6>{item.title}</h6>
                 <p>{item.text}</p>
-                <div className='overlay-text'>
+                <div className="overlay-text">
                   <li>
-                    <a href={item.link1}>
+                    <a href={item.link1} target="_blank" rel="noreferrer">
                       <GitHubIcon sx={{ fontSize: 40 }} />
                     </a>
                   </li>
                   <li>
-                    <a href={item.link2}>
+                    <a href={item.link2} target="_blank" rel="noreferrer">
                       <PreviewIcon sx={{ fontSize: 40 }} />
                     </a>
                   </li>
@@ -41,7 +41,7 @@ export default MenuProjects;
 const StyledMenu = styled.div`
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 15px;
@@ -50,7 +50,7 @@ const StyledMenu = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 300px;
+    width: 350px;
     height: 200px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     @media (min-width: 768px) and (max-width: 1023px) {
@@ -73,7 +73,7 @@ const StyledMenu = styled.div`
   }
   .portfolio-image {
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 2%;
       top: 4%;
