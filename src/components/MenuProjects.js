@@ -45,6 +45,10 @@ const StyledMenu = styled.div`
   align-items: center;
   gap: 10px;
   padding: 15px;
+  @media (max-width: 480px) {
+    padding: 5px 15px;
+    justify-content: space-between;
+  }
 
   .grid-item {
     display: flex;

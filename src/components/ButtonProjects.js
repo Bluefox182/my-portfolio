@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 function ButtonProjects({ filter, button }) {
   return (
@@ -56,10 +56,11 @@ const ButtonsStyled = styled.div`
   gap: 20px;
   width: 70%;
   padding: 35px 0;
-  @media screen and (max-width: 599px) {
+  @media screen and (max-width: 480px) {
     gap: 10px;
+    width: 100%;
   }
-  @media screen and (max-width: 767px) {
+  @media screen (min-width: 481px) and (max-width: 767px) {
     flex-wrap: wrap;
     width: 80%;
   }
