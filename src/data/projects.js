@@ -58,7 +58,7 @@ const projects = [
     category: "ReactJS",
     image: React04,
     link1: "https://github.com/Bluefox182/ultimate-rick-and-morty",
-    link2: "https://ultimate-rick-and-morty.netlify.app/",
+    link2: "https://bluefox-rick-and-morty.vercel.app/",
     title: "Rick and Morty API",
     text: "Built with ReactJS ",
   },
