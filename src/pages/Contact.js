@@ -94,21 +94,28 @@ export default Contact;
 
 const StyledContact = styled.div`
   width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  align-items: center;
+  // padding-top: 60px;
+  // padding-bottom: 30px;
+  overflow: none;
+  @media (min-width: 1201px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   .ContactForm-Container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     width: 95%;
-    height: 80%;
-    padding: 20px;
+    height: auto;
+    padding: 60px 20px;
     box-sizing: border-box;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     color: var(--font-light-color);
     border: 3px solid var(--border-color);
     border-radius: 0.5rem;
@@ -131,8 +138,9 @@ const StyledContact = styled.div`
     width: 100%;
     max-width: 700px;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
+    overflow: none;
   }
 
   .title {
@@ -140,6 +148,7 @@ const StyledContact = styled.div`
     font-weight: 700;
     margin-bottom: 20px;
     color: var(--primary-color-light);
+    overflow-y: hidden;
     @media (max-width: 480px) {
       font-size: 2rem;
     }
