@@ -65,6 +65,11 @@ function Contact() {
                     placeholder="Email"
                     required
                   />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                  />
                 </div>
               </div>
               <div className="form-textarea">
@@ -76,9 +81,14 @@ function Contact() {
                   placeholder="Your Message"
                   required
                 ></textarea>
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
               </div>
               <div className="form-button">
-                <button className="button-contact" type="submit" value="Send">
+                <button className="button-contact" type="submit">
                   Send Message!
                 </button>
               </div>
