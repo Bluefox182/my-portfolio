@@ -98,9 +98,14 @@ const StyledContact = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  // padding-top: 60px;
-  // padding-bottom: 30px;
   overflow: none;
+  @media (max-width: 413px) {
+    // width: 90%;
+    height: 90%;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
   @media (min-width: 1201px) {
     padding-top: 0;
     padding-bottom: 0;
@@ -121,8 +126,15 @@ const StyledContact = styled.div`
     border-radius: 0.5rem;
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
     transition: all 0.5s ease-in-out;
+    @media (max-width: 413px) {
+      width: 90%;
+      height: 90%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin: 0;
+    }
 
-    @media (max-width: 479px) {
+    @media (min-width: 414px) and (max-width: 479px) {
       margin: 0 20px;
     }
     @media (min-width: 480px) and (max-width: 768px) {
