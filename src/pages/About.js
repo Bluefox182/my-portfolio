@@ -1,17 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
-import avatar from '../assets/img/avatar4.png';
+import React from "react";
+import styled from "styled-components";
+import avatar from "../assets/img/avatar4.png";
 
 function About() {
   return (
     <StyledAbout>
-      <div className='MainContainer'>
-        <div className='TopContainer'>
-          <h1 className='title'>About Me</h1>
+      <div className="MainContainer">
+        <div className="TopContainer">
+          <h1 className="title">About Me</h1>
         </div>
-        <div className='HeroContainer'>
-          <div className='LeftContainer'>
-            <h2 className='sub-title'>Who I am?</h2>
+        <div className="HeroContainer">
+          <div className="LeftContainer">
+            <h2 className="sub-title">Who I am?</h2>
             <p>
               ⚡ I'm a Full-Stack Engineer focused on Front-End Development and
               emerging tech such as AR and Blockchain.
@@ -27,8 +27,8 @@ function About() {
               ambitious projects with positive people.
             </p>
           </div>
-          <div className='RightContainer'>
-            <img src={avatar} alt='Avatar' />
+          <div className="RightContainer">
+            <img src={avatar} alt="Avatar" />
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@ const StyledAbout = styled.div`
     max-width: 700px;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
+    height: 500px;
     p {
       padding: 10px 0;
     }
