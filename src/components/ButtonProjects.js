@@ -23,12 +23,19 @@ const ButtonStyled = styled.button`
     width: 40%;
   }
   outline: none;
-  border: none;
-  background-color: #0779e4;
+  background: linear-gradient(
+        to right,
+        var(--background-dark-grey),
+        var(--background-dark-grey)
+      )
+      padding-box,
+    linear-gradient(to right, #3330e4, #db00ff) border-box;
+  border: 2px solid transparent;
+  border-radius: 10px;
   padding: 0.4rem 2.4rem;
   font-size: 16px;
   border-radius: 20px;
-  color: #eeeeee;
+  color: var(--font-light-color);
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   margin-bottom: 0.6rem;
@@ -42,7 +49,9 @@ const ButtonStyled = styled.button`
   }
   &:hover {
     transform: scale(1.1);
-    background: linear-gradient(to right, #4d74e6, #2a57dc);
+    background: linear-gradient(to right, #3330e4, #db00ff);
+    border: none;
+    transition: all 0.5s ease-in-out;
   }
   &:not(:last-child) {
     margin-right: 0.6rem;

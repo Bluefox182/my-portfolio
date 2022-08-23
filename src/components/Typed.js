@@ -1,25 +1,26 @@
-import React from 'react';
-import TypeWriterEffect from 'react-typewriter-effect';
-import styled from 'styled-components';
+import React from "react";
+import TypeWriterEffect from "react-typewriter-effect";
+import styled from "styled-components";
 
 function Typed() {
   return (
     <StyledTyped>
       <p>I love </p>
-      <div className='typewriter'>
+      <div className="typewriter">
         <TypeWriterEffect
           textStyle={{
             fontWeight: 500,
-
-            color: '#057FFF',
+            textAlign: "center",
+            // color: "#7900FF",
+            color: "#DB00FF",
           }}
           startDelay={1500}
-          cursorColor='#057FFF'
+          cursorColor="#DB00FF"
           multiText={[
-            'to create unique digital experiences.',
-            'learning new technologies.',
-            'to design new things.',
-            'to code.',
+            "to create unique digital experiences.",
+            "learning new technologies.",
+            "to design new things.",
+            "to code.",
           ]}
           multiTextDelay={1000}
           typeSpeed={50}

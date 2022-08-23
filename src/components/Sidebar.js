@@ -1,43 +1,43 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import avatar from '../assets/img/avatar.png';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import avatar from "../assets/img/avatar.png";
 
 function Sidebar({ navToggle }) {
   return (
-    <SidebarContainer className={`${navToggle ? 'nav-toggle' : ''}`}>
-      <div className='Nav-Container'>
-        <div className='avatar'>
-          <img src={avatar} alt='' />
+    <SidebarContainer className={`${navToggle ? "nav-toggle" : ""}`}>
+      <div className="Nav-Container">
+        <div className="avatar">
+          <img src={avatar} alt="" />
         </div>
-        <ul className='nav-items'>
-          <li className='nav-item'>
-            <Link to='/' activeClassName='active-class'>
+        <ul className="nav-items">
+          <li className="nav-item">
+            <Link to="/" activeClassName="active-class">
               Home
             </Link>
           </li>
-          <li className='nav-item'>
-            <Link to='/about' activeClassName='active-class'>
+          <li className="nav-item">
+            <Link to="/about" activeClassName="active-class">
               About
             </Link>
           </li>
-          <li className='nav-item'>
-            <Link to='/skills' activeClassName='active-class'>
+          <li className="nav-item">
+            <Link to="/skills" activeClassName="active-class">
               My Skills
             </Link>
           </li>
-          <li className='nav-item'>
-            <Link to='/work' activeClassName='active-class'>
+          <li className="nav-item">
+            <Link to="/work" activeClassName="active-class">
               Work
             </Link>
           </li>
-          <li className='nav-item'>
-            <Link to='/contact' activeClassName='active-class'>
+          <li className="nav-item">
+            <Link to="/contact" activeClassName="active-class">
               Contact
             </Link>
           </li>
         </ul>
-        <footer className='footer'>
+        <footer className="footer">
           <p>© 2022 Bluefox182</p>
         </footer>
       </div>
@@ -77,24 +77,46 @@ const SidebarContainer = styled.div`
     align-items: center;
     height: 100%;
     width: 100%;
-    border-right: 1px solid var(--border-color);
+    // border-right: 1px solid var(--border-color);
+
+    background: linear-gradient(
+      to right,
+      var(--background-dark-color),
+      var(--background-dark-color)
+    )
+    padding-box,
+  linear-gradient(#3330e4, #db00ff) border-box;
+border-right: 2px solid transparent;
     
   }
 
 
   .avatar {
     width: 80%;
-    border-bottom: 1px solid var(--border-color);
+    background: linear-gradient(
+      to right,
+      var(--background-dark-color),
+      var(--background-dark-color)
+    )
+    padding-box,
+    linear-gradient(to right, #3330e4, #db00ff) border-box;
+    border-bottom: 2px solid transparent;
     text-align: center;
     padding: 1rem 0;
     overflow: hidden;
     img {
       width: 100%;
       border-radius: 50%;
-      background: var(--border-color);
       background-size: cover;
       background-position: center;
       border: 3px solid transparent;
+      background: linear-gradient(
+        to right,
+        var(--background-dark-grey),
+        var(--background-dark-grey)
+      )
+      padding-box,
+      linear-gradient(to right, #3330e4, #db00ff) border-box;
     }
   }
   .nav-items {
@@ -103,6 +125,7 @@ const SidebarContainer = styled.div`
     overflow: hidden;
     li {
       display: block;
+      
       a {
         display: block;
         padding: 1rem 0;
@@ -113,6 +136,17 @@ const SidebarContainer = styled.div`
         font-weight: 600;
         font-size: 0.8rem;
         letter-spacing: 3px;
+        &::active::before {
+          background: linear-gradient(
+            to right,
+            var(--background-dark-grey),
+            var(--background-dark-grey)
+          )
+          padding-box,
+          linear-gradient(to right, #3330e4, #db00ff) border-box;
+          border: 2px solid transparent;
+          border-radius: 10px;
+        }
         &:hover {
           cursor: pointer;
           color: var(--white-color-2);
@@ -125,7 +159,7 @@ const SidebarContainer = styled.div`
           left: 0;
           width: 0;
           height: 50%;
-          background-color: var(--primary-color-light);
+          background: linear-gradient(to right, #3330e4, #db00ff);
           transition: 0.35s;
           z-index: -1;
         }
@@ -138,7 +172,14 @@ const SidebarContainer = styled.div`
   }
 
   footer {
-    border-top: 1px solid var(--border-color);
+    background: linear-gradient(
+      to right,
+      var(--background-dark-color),
+      var(--background-dark-color)
+    )
+    padding-box,
+    linear-gradient(to right, #3330e4, #db00ff) border-box;
+    border-top: 2px solid transparent;
     width: 80%;
     overflow: hidden;
     p {

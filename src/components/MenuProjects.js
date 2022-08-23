@@ -43,7 +43,7 @@ const StyledMenu = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   padding: 15px;
   @media (max-width: 480px) {
     padding: 5px 15px;
@@ -55,6 +55,7 @@ const StyledMenu = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     width: 350px;
+    border-radius: 20px;
     height: 200px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     @media (min-width: 768px) and (max-width: 1023px) {

@@ -1,20 +1,21 @@
-import React from 'react';
-import styled from 'styled-components';
-import Particle from '../components/Particle';
-import Typed from '../components/Typed';
+import React from "react";
+import styled from "styled-components";
+import Particle from "../components/Particle";
+import Typed from "../components/Typed";
 
 function Home() {
   return (
     <HomeStyled>
-      <div className='typography'>
-        <h1 className='main-text'>
-          <span className='has-first-color'>Howdy,</span> I'm<br></br> Fernando
+      <div className="typography">
+        <h1 className="main-text">
+          Howdy, I'm<br></br>
+          <span className="has-first-color">Fernando</span>
         </h1>
         <h2>FullStack Engineer | MERN Stack</h2>
         <Typed />
       </div>
-      <div className='particles-con'>
-        <Particle className='particles' />
+      <div className="particles-con">
+        <Particle className="particles" />
       </div>
     </HomeStyled>
   );
@@ -37,14 +38,13 @@ const HomeStyled = styled.div`
   .typography {
     position: absolute;
     text-align: left;
-    width: 80%;
+    padding: 0 20px;
+    width: 100%;
 
     h1,
     span {
-      font-size: 5.5rem;
+      font-size: 6rem;
       font-weight: 500;
-      line-height: 1;
-      padding: 20px 0;
     }
     span {
       color: var(--primary-color-light);
@@ -53,8 +53,8 @@ const HomeStyled = styled.div`
       font-size: 1.5rem;
       font-weight: 300;
       line-height: 1;
-      color: var(--font-light-color-2);
-      padding: 20px 0;
+      color: var(--font-light-color);
+      padding: 15px 0;
     }
 
     .icons {

@@ -132,9 +132,12 @@ const StyledContact = styled.div`
     align-items: center;
     justify-content: center;
     color: var(--font-light-color);
-    border: 3px solid var(--border-color);
+    background-color: var(--background-dark-grey);
+    // background-color: #1a1a1a;
+    // background-color: #202020;
+    // border: 3px solid var(--border-color);
     border-radius: 0.5rem;
-    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.8);
     transition: all 0.5s ease-in-out;
     @media (max-width: 413px) {
       width: 90%;
@@ -198,7 +201,15 @@ const StyledContact = styled.div`
   .form-field {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid var(--border-color);
+
+    background: linear-gradient(
+          to right,
+          var(--background-dark-grey),
+          var(--background-dark-grey)
+        )
+        padding-box,
+      linear-gradient(to right, #3330e4, #db00ff) border-box;
+    border-bottom: 2px solid transparent;
     color: var(--font-light-color-2);
     transition: all 0.5s ease-in-out;
   }
@@ -222,43 +233,50 @@ const StyledContact = styled.div`
       }
     }
   }
-
   textarea {
-    border: 3px solid var(--border-color);
-    background: transparent;
+    background: linear-gradient(
+          to right,
+          var(--background-dark-grey),
+          var(--background-dark-grey)
+        )
+        padding-box,
+      linear-gradient(to right, #3330e4, #db00ff) border-box;
+    border: 2px solid transparent;
+    border-radius: 10px;
     outline: none;
     margin-bottom: 30px;
     color: var(--font-light-color-2);
     width: 100%;
     padding: 0.8rem 1rem;
-    border-radius: 8px;
     font-family: "Montserrat", sans-serif;
     ::placeholder {
       color: var(--font-light-color-2);
       opacity: 1; /* Firefox */
     }
-    :focus {
-      border: 3px solid var(--primary-color-light);
-      /* border-radius: 8px; */
-    }
   }
 
   .button-contact {
     width: 100%;
-    color: var(--white-color-2);
+    color: var(--font-light-color);
     height: 60px;
-    border: none;
-    background: var(--primary-color);
+    background: linear-gradient(
+          to right,
+          var(--background-dark-grey),
+          var(--background-dark-grey)
+        )
+        padding-box,
+      linear-gradient(to right, #3330e4, #db00ff) border-box;
+    border: 2px solid transparent;
+    border-radius: 10px;
     font-size: 20px;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
     font-family: "Montserrat", sans-serif;
     cursor: pointer;
     :hover {
-      background: var(--primary-color-light);
-      border-radius: 8px;
-      transition: 0.5s all ease;
+      background: linear-gradient(to right, #3330e4, #db00ff);
+      border: none;
+      transition: all 0.5s ease-in-out;
     }
   }
 `;

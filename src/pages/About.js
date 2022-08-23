@@ -52,16 +52,16 @@ const StyledAbout = styled.div`
 
   .MainContainer {
     display: flex;
-
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--background-dark-grey);
     color: var(--font-light-color);
-    border: 3px solid var(--border-color);
+    // border: 3px solid var(--border-color);
     border-radius: 0.5rem;
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
     transition: all 0.5s ease-in-out;
@@ -108,6 +108,7 @@ const StyledAbout = styled.div`
     font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: 20px;
+    color: #db00ff;
     @media (max-width: 480px) {
       font-size: 1.4rem;
     }
@@ -116,10 +117,10 @@ const StyledAbout = styled.div`
   .LeftContainer {
     display: flex;
     width: 50%;
-    max-width: 700px;
+    height: auto;
+    padding: 0 30px;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 500px;
     p {
       padding: 10px 0;
     }
@@ -136,10 +137,12 @@ const StyledAbout = styled.div`
   .RightContainer {
     display: flex;
     width: 50%;
-    max-width: 700px;
-    flex-direction: column;
-    justify-content: space-evenly;
     height: 100%;
+    justify-content: center;
+    img {
+      width: 90%;
+      height: auto;
+    }
     @media (max-width: 1024px) {
       width: 100%;
       align-items: center;

@@ -1,10 +1,11 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
 :root{
     --primary-color: #4d74e6;
-    --primary-color-light: ##4d74e6;
+    // --primary-color-light: ##4d74e6;
+    --primary-color-light: #3330E4;
     --secondary-color: #6c757d;
     --background-dark-color: #10121A;
     --background-dark-grey: #191D2B;
@@ -17,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     --font-light-color-2: #313131;
     --font-dark-color: #313131;
     --font-dark-color-2: #151515;
+    --icon-dark-color: #202020;
     --sidebar-dark-color: #191D2B;
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
@@ -24,10 +26,10 @@ const GlobalStyle = createGlobalStyle`
 } 
 .light-theme{
     --primary-color: #4d74e6;
-    --primary-color-light: #057FFF;
+    --primary-color-light: #3330E4;
     --secondary-color: #6c757d;
-    --background-dark-color: #F9F9F9;
-    --background-dark-grey: #e4e4e4;
+    --background-dark-color: #FFFFFF;
+    --background-dark-grey: #F9F9F9;
     --border-color: #cbced8;
     --background-light-color: #F1F1F1;
     --background-light-color-2: rgba(3,127,255,.3);
@@ -37,17 +39,20 @@ const GlobalStyle = createGlobalStyle`
     --font-light-color-2: #313131;
     --font-dark-color: #313131;
     --font-dark-color-2: #151515;
-    --sidebar-dark-color: #F9F9F9;
+    --icon-dark-color: #E1E5EA;
+    --sidebar-dark-color: #FFFFFF;
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
     --scrollbar-track-color: #383838;
 }
 .dark-theme{
     --primary-color: #4d74e6;
-    --primary-color-light: #057FFF;
+    // --primary-color-light: #057FFF;
+    // --primary-color-light: #0000ff;
+    --primary-color-light: #3330E4;
     --secondary-color: #6c757d;
     --background-dark-color: #111316;
-    --background-dark-grey: #191D2B;
+    --background-dark-grey: #0F0E0E;
     --border-color: #4d74e6;
     --background-light-color: #F1F1F1;
     --background-light-color-2: rgba(3,127,255,.3);
@@ -57,6 +62,7 @@ const GlobalStyle = createGlobalStyle`
     --font-light-color-2: #6c757d;
     --font-dark-color: #313131;
     --font-dark-color-2: #151515;
+    --icon-dark-color: #202020;
     --sidebar-dark-color: #111316;
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
