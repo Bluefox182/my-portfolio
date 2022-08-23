@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-import { IconButton } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import { IconButton } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 
 function ToggleMenu() {
   const [click, setClick] = useState(false);
@@ -11,37 +11,37 @@ function ToggleMenu() {
 
   return (
     <StyledToggleButton>
-      <div className='menu-toggle'>
+      <div className="menu-toggle">
         <IconButton onClick={handleClick}>
           <MenuIcon clicked={click} />
         </IconButton>
       </div>
 
       <NavBackground clicked={click}></NavBackground>
-      <Navigation clicked={click} className='nav-toggle'>
+      <Navigation clicked={click} className="nav-toggle">
         <List>
           <ItemLink>
-            <Link onClick={handleClick} to='/'>
+            <Link onClick={handleClick} to="/">
               Home
             </Link>
           </ItemLink>
           <ItemLink>
-            <Link onClick={handleClick} to='/about'>
+            <Link onClick={handleClick} to="/about">
               About
             </Link>
           </ItemLink>
           <ItemLink>
-            <Link onClick={handleClick} to='/skills'>
+            <Link onClick={handleClick} to="/skills">
               My Skills
             </Link>
           </ItemLink>
           <ItemLink>
-            <Link onClick={handleClick} to='/work'>
+            <Link onClick={handleClick} to="/work">
               Work
             </Link>
           </ItemLink>
           <ItemLink>
-            <Link onClick={handleClick} to='/contact'>
+            <Link onClick={handleClick} to="/contact">
               Contact
             </Link>
           </ItemLink>
@@ -59,7 +59,7 @@ const NavBackground = styled.div`
   width: 4rem;
   border-radius: 50%;
   z-index: 600;
-  transform: ${(props) => (props.clicked ? 'scale(80)' : 'scale(0)')};
+  transform: ${(props) => (props.clicked ? "scale(80)" : "scale(0)")};
   transition: transform 0.8s;
 `;
 
@@ -69,8 +69,8 @@ const Navigation = styled.div`
   top: 0;
   right: 0;
   z-index: 15;
-  width: ${(props) => (props.clicked ? '100%' : '0')};
-  opacity: ${(props) => (props.clicked ? '1' : '0')};
+  width: ${(props) => (props.clicked ? "100%" : "0")};
+  opacity: ${(props) => (props.clicked ? "1" : "0")};
   transition: width 0.8s, opacity 0.8s;
 `;
 
@@ -95,14 +95,11 @@ const ItemLink = styled.li`
   color: #eeeeee;
   padding: 0.5rem 1.5rem;
   width: 100%;
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    #057FFF 50%
-  );
   background-size: 240%;
   transition: all 0.4s;
+  &:hover {
+    background: linear-gradient(to right, #3330e4, #db00ff);
+  }
   &:hover,
   &:active {
     background-position: 100%;
