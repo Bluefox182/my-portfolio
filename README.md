@@ -47,4 +47,4 @@ This a solo Front-End project to build my Website Portfolio.
 - Refactoring Code.
 
 ## Final Look
-<img width="100%" src="https://i.ibb.co/K03JJFh/Profile02.png" alt="Profile02" border="0">
+<img width="100%" src="https://i.ibb.co/xsv74C6/Profile02.png" alt="Profile02" border="0">
