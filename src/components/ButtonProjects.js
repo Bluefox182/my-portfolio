@@ -51,6 +51,7 @@ const ButtonStyled = styled.button`
     transform: scale(1.1);
     background: linear-gradient(to right, #3330e4, #db00ff);
     border: none;
+    color: var(--white-color-2);
     transition: all 0.5s ease-in-out;
   }
   &:not(:last-child) {

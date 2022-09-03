@@ -129,6 +129,11 @@ const StyledWorkCard = styled.div`
       background: linear-gradient(to right, #3330e4, #db00ff);
       border: none;
       transition: all 0.5s ease-in-out;
+      color: var(--white-color-2);
+      a {
+        color: var(--white-color-2);
+        transition: all 0.5s ease-in-out;
+      }
     }
 
     a {

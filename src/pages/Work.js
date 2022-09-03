@@ -49,7 +49,7 @@ const StyledWork = styled.div`
     transition: all 0.5s ease-in-out;
 
     @media (max-width: 479px) {
-      margin: 0 20px;
+      margin: 0;
     }
     @media (min-width: 480px) and (max-width: 768px) {
       /* width: 75%; */
