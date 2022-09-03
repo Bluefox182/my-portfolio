@@ -13,7 +13,7 @@ const projects = [
     link1: "https://github.com/Bluefox182/Google-Clone",
     link2: "https://bluefox182.github.io/Google-Clone/",
     title: "Google Clone",
-    text: "HTML5 and CSS3.",
+    text: "My own version of Google's homepage made with HTML and pure CSS.",
   },
 
   {
@@ -23,7 +23,7 @@ const projects = [
     link1: "https://github.com/Bluefox182/JavaScript-Drum-Kit",
     link2: "https://bluefox182.github.io/JavaScript-Drum-Kit/",
     title: "Drum Kit",
-    text: "Built with JavaScript",
+    text: "Play the drums with your keyboard, this games was built with Js Vanilla.",
   },
   {
     id: 3,
@@ -32,17 +32,17 @@ const projects = [
     link1: "https://github.com/Bluefox182/cupcake-landing-page",
     link2: "https://cupcake-landing-page.netlify.app/",
     title: "Cupcake Landing Page",
-    text: "Built with ReactJs",
+    text: "A landing page for a cupcake shop, made with React.",
   },
 
   {
     id: 4,
     category: "ReactJS",
     image: React02,
-    link1: "https://github.com/Bluefox182/To-Do-List",
-    link2: "https://bluefox182.github.io/To-Do-List/",
-    title: "GitHub Profile",
-    text: "Built with ReactJS and GitHub API",
+    // link1: "",
+    link2: "https://monteza-eventos.vercel.app/",
+    title: "Monteza Eventos",
+    text: "A special Project for a customer who wanted a website for his event company, made with React.",
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const projects = [
     link1: "https://github.com/Bluefox182/ultimate-weather-app",
     link2: "https://bluefox182-weather-app.vercel.app/",
     title: "The Ultimate Weather App",
-    text: "React Weather App",
+    text: "A beautiful weather app built with ReactJS and OpenWeather API",
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ const projects = [
     link1: "https://github.com/Bluefox182/ultimate-rick-and-morty",
     link2: "https://bluefox-rick-and-morty.vercel.app/",
     title: "Rick and Morty API",
-    text: "Built with ReactJS ",
+    text: "Discover the characters of Rick and Morty with this app built with ReactJS and Rick and Morty API",
   },
 ];
 

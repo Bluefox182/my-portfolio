@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import projects from '../data/projects.js';
-import ButtonProjects from '../components/ButtonProjects';
-import MenuProjects from '../components/MenuProjects';
+import React, { useState } from "react";
+import styled from "styled-components";
+import projects from "../data/projects.js";
+import ButtonProjects from "../components/ButtonProjects";
+// import MenuProjects from '../components/MenuProjects';
+import WorkCard from "../components/WorkCard";
 
-const allButtons = ['ALL', ...new Set(projects.map((item) => item.category))];
+const allButtons = ["ALL", ...new Set(projects.map((item) => item.category))];
 
 function Work() {
   const [menuItem, setMenuItems] = useState(projects);
   const [button, setButtons] = useState(allButtons);
 
   const filter = (button) => {
-    if (button === 'ALL') {
+    if (button === "ALL") {
       setMenuItems(projects);
       return;
     }
@@ -22,13 +23,13 @@ function Work() {
 
   return (
     <StyledWork>
-      <div className='MainContainer'>
-        <div className='TopContainer'>
-          <h1 className='title'>My Work</h1>
+      <div className="MainContainer">
+        <div className="TopContainer">
+          <h1 className="title">My Work</h1>
         </div>
-        <div className='ProjectsContainer'>
+        <div className="ProjectsContainer">
           <ButtonProjects filter={filter} button={button} />
-          <MenuProjects menuItem={menuItem} />
+          <WorkCard menuItem={menuItem} />
         </div>
       </div>
     </StyledWork>
