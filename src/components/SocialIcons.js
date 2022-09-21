@@ -1,25 +1,32 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 function SocialIcons() {
   return (
     <StyledSocialIcons>
-      <div className='icons'>
-        <a href='https://github.com/Bluefox182' className='icon i-github'>
+      <div className="icons">
+        <a href="https://github.com/Bluefox182" className="icon i-github">
           <GitHubIcon />
         </a>
         <a
-          href='https://www.linkedin.com/in/fernandogaldos/'
-          className='icon i-linkedin'
+          href="https://www.linkedin.com/in/fernandogaldos/"
+          className="icon i-linkedin"
         >
           <LinkedInIcon />
         </a>
-        <a href='https://twitter.com/bluefox182' className='icon i-twitter'>
+        <a href="https://twitter.com/bluefox182" className="icon i-twitter">
           <TwitterIcon />
+        </a>
+        <a
+          href="https://www.instagram.com/bluefox182.codes/"
+          className="icon i-instagram"
+        >
+          <InstagramIcon />
         </a>
       </div>
     </StyledSocialIcons>
